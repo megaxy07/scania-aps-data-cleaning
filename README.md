@@ -19,7 +19,7 @@ https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks
 
 The raw dataset was preserved without modification in:
 
-`data/raw/aps_failure_training_set.csv`
+`scania-aps-data-cleaning/aps_failure_training_set.csv`
 
 ## Dataset dimensions before preprocessing
 
@@ -58,8 +58,8 @@ The raw dataset was preserved without modification in:
 
 ## Repository structure
 
-- `data/raw/`: original dataset
-- `data/cleaned/`: cleaned dataset and preprocessing parameters
+- `aps_failure_training_set.csv`: original dataset
+- `aps_failure_cleaned.csv.gz`: cleaned dataset and preprocessing parameters
 - `Scania_APS_Data_Cleaning.ipynb`: complete preprocessing code
 - `requirements.txt`: required Python libraries
 
@@ -67,7 +67,7 @@ The raw dataset was preserved without modification in:
 
 The final cleaned dataset is available as:
 
-`data/cleaned/aps_failure_cleaned.csv.gz`
+`scania-aps-data-cleaning/aps_failure_cleaned.csv.gz`
 
 The file is compressed because the uncompressed CSV is large. It can be
 loaded directly with pandas:
@@ -76,6 +76,6 @@ loaded directly with pandas:
 import pandas as pd
 
 df = pd.read_csv(
-    "data/cleaned/aps_failure_cleaned.csv.gz",
+    "scania-aps-data-cleaning/aps_failure_cleaned.csv.gz",
     compression="gzip"
 )
