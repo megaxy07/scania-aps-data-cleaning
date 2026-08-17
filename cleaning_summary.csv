@@ -1,0 +1,13 @@
+metric,value
+Original rows,60000
+Original columns,171
+Original missing values,850015
+Duplicate rows removed,0
+High-missing columns removed,9
+Constant columns removed,1
+Missing values imputed,453787
+Extreme values capped,906880
+Final rows,60000
+Final columns,161
+Final missing values,0
+Final duplicate rows,367
